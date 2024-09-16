@@ -1,0 +1,142 @@
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    background-color: #a1b7b0; 
+}
+
+  
+  .roboto-regular {
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+
+  
+
+.container {
+    position: relative;
+    width: 80%; 
+    height: 80%; 
+}
+
+.contact-card {
+    position: absolute;
+    width: 954px; 
+    height: 594px; 
+    background-color: #BE0909; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    position: relative; 
+}
+
+
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    color: white;
+    position: relative; 
+    z-index: 2;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+    outline: none;
+   
+    position: relative; 
+    z-index: 2;
+}
+
+.contact-form input#name ,.contact-form input#message{
+    width: 400px ;
+    height: 72px;
+}
+.contact-form input#subject{
+    width: 213px ;
+    height: 72px;
+
+}
+.contact-form input#email{
+    width: 160px ;
+    height: 72px;
+
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: white;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-bottom: 1px solid #0066cc;
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+}
+
+.submit-btn {
+
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #468189;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: center;
+    position: relative;
+    z-index: 2;
+}
+
+.submit-btn:hover {
+    background-color: #3f5c62;
+    outline: 2px solid #0066cc;
+}
+
+.yellow-section {
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    width: 335px; 
+    height: 594px;
+    background-color: #ffcc66; 
+        z-index: 1;
+}
+
+.image-section {
+    position: absolute;
+    top: 120px; 
+    right: 220px; 
+    width: 400px; 
+    height: 420;
+    z-index: 2;
+}
+
+.duck-image {
+    max-width: 100%;
+    height: auto;
+}
